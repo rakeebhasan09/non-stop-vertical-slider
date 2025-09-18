@@ -1,6 +1,7 @@
 // import { Suspense } from "react";
 // import Users from "./Components/Users";
 // import MarqueeSlider from "./Components/MarqueSlider";
+import Gallery from "./Components/Gallery";
 import ProjectSlider from "./Components/ProjectSlider";
 
 // const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(
@@ -35,7 +36,7 @@ function App() {
 				</div>
 				<MarqueeSlider></MarqueeSlider>
 			</div> */}
-			<div>
+			{/* <div>
 				<h2 className="text-[25px] text-center mb-5 mt-5">
 					Recent Project's
 				</h2>
@@ -44,6 +45,17 @@ function App() {
 						<div className="absolute top-[-3px] w-[20px] h-[10px] bg-red-600 animate-mymove"></div>
 					</div>
 					<ProjectSlider></ProjectSlider>
+				</div>
+			</div> */}
+			<div>
+				<h2 className="text-[25px] text-center mb-5 mt-5">
+					Filterable Image Gallery
+				</h2>
+				<div className="container mx-auto">
+					<div className="relative w-[150px] h-[5px] bg-black mx-auto">
+						<div className="absolute top-[-3px] w-[20px] h-[10px] bg-red-600 animate-mymove"></div>
+					</div>
+					<Gallery></Gallery>
 				</div>
 			</div>
 		</>
