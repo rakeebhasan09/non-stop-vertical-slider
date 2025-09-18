@@ -27,6 +27,11 @@ function App() {
 				<h2 className="text-[25px] text-center mb-5 mt-5">
 					MargueeSlider Using Slick Slider
 				</h2>
+				<div>
+					<div className="relative w-[200px] h-[5px] bg-black mx-auto">
+						<div className="absolute top-[-3px] w-[20px] h-[10px] bg-red-600 animate-mymove"></div>
+					</div>
+				</div>
 				<MarqueeSlider></MarqueeSlider>
 			</div>
 		</>

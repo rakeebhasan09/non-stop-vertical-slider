@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@layer utilities {
+	@keyframes mymove {
+		0% {
+			left: 0;
+		}
+		50% {
+			left: calc(100% - 20px);
+		}
+		100% {
+			left: 0;
+		}
+	}
+	.animate-mymove {
+		animation: mymove 6s linear infinite;
+	}
+}

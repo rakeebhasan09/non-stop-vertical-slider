@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+			}
+			.main-border {
+				width: 200px;
+				height: 5px;
+				background: black;
+				position: relative;
+			}
+
+			.running-block {
+				width: 20px;
+				height: 10px;
+				background: red;
+				position: absolute;
+				top: -3px;
+				animation: mymove 6s infinite linear;
+			}
+
+			@keyframes mymove {
+				0% {
+					left: 0;
+				}
+				50% {
+					left: calc(100% - 20px);
+				}
+				100% {
+					left: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-border">
+			<div class="running-block"></div>
+		</div>
+	</body>
+</html>
