@@ -1,0 +1,14 @@
+.swiper {
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.swiper-slide {
+	width: 300px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+}
